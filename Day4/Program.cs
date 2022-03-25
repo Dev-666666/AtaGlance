@@ -28,7 +28,9 @@ namespace Day4
             {
                 Console.WriteLine(" "+ e.Message);
             }
-           
+           //outvariable
+           outvar o=new outvar();
+            o.calculation(10,20,out abstractDemo,out s,out m);
 
          }
     }
