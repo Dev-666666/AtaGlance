@@ -29,7 +29,13 @@ namespace Assignments_TR
 
         public  void showInfo()
         {
+            if(per < 40)
+            {
+                Console.WriteLine("Fail");
+            }
+            else { 
             Console.WriteLine("\n Roll_no: {0} \n Student Name {1} \n Student Percentage {2} ",roll_no ,name,per );
+                }
         }
     }
 }

@@ -18,6 +18,8 @@ namespace Assignments_TR
             Student s2 = new Student("Gauri Desai", 82.1023f);
             s2.showInfo();
             //Product
+            Product p=new Product(100,"Grossary",5000f);
+            p.display();
 
         }
     }
