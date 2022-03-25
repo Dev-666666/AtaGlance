@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCE2D1FE-FD12-427F-A955-F3A0C61A8282}</ProjectGuid>
+    <ProjectGuid>{C19AD946-0564-4667-80BA-BC1F8E148040}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day5</RootNamespace>
-    <AssemblyName>Day5</AssemblyName>
+    <RootNamespace>Multithreading</RootNamespace>
+    <AssemblyName>Multithreading</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bank.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="..\..\C#\Multithreading\Multithreading.cs" />
+    <Compile Include="threaddemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

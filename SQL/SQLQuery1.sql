@@ -1,0 +1,13 @@
+select * from Department;
+select * from Emp;
+select * from Employee;
+Select count(emp_id) as Total_Emp from Emp;
+update Emp set emp_salary=28000 where emp_name='Pooja';
+select count(emp_name) from Emp group by emp_salary having emp_salary >20000;
+select emp_name from Emp where emp_salary=30000;
+select distinct emp_name from Emp;
+select emp_name,count(emp_name) from Emp group by emp_name having count(emp_name)>1;
+--select  where max(emp_salary);
+alter table Emp add Exp int;
+select * from Emp where Exp=(select max(Exp) from Emp);
+alter table Emp add JoiningDate Date;
