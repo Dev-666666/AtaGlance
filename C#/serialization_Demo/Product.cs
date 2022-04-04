@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace serialization_Demo
 {
-    internal class Product
+    [Serializable]
+    public class Product
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public int Quantity { get; set; }
+        public int id { set; get; }
+        public string name { set; get; }
+        public string location { set; get; }
     }
 }

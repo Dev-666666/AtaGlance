@@ -23,10 +23,7 @@ namespace serialization_Demo
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         private void butbwrite_Click(object sender, EventArgs e)
         {
             try
@@ -47,24 +44,7 @@ namespace serialization_Demo
                 MessageBox.Show(ex.Message);
             }
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Department dept = new Department();
-                FileStream f = new FileStream(@"E:\TrainingXtenITCompCnyompa\FileClassStore\Fbinary.dat", FileMode.Open, FileAccess.Read);
-                BinaryFormatter bf = new BinaryFormatter();
-               dept= (Department)bf.Deserialize(f);
-                txtid.Text = dept.Id.ToString();
-                txtname.Text = dept.name;
-                txtlocation.Text = dept.location;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+        
 
         private void butjsonwrite_Click(object sender, EventArgs e)
         {
@@ -76,10 +56,9 @@ namespace serialization_Demo
                 dept.name = txtname.Text;
                 dept.location = txtlocation.Text;
                 //2. Create a file & open in write mode 
-                FileStream f = new FileStream(@"E:\TrainingXtenITCompCnyompa\FileClassStore\Fjson.json", FileMode.Create, FileAccess.Write);
+                FileStream f = new FileStream(@"E:\Newjson.json", FileMode.Create, FileAccess.Write);
                 //3. use serliaze method 
-                BinaryFormatter bf = new BinaryFormatter();
-                bf.Serialize(f, dept);
+                JsonSerializer.Serialize(f, dept);
                 f.Close();
                 MessageBox.Show("File Created");
             }
@@ -166,6 +145,24 @@ namespace serialization_Demo
                 MessageBox.Show("File created");
             }
             catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void butbread_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Department dept = new Department();
+                FileStream f = new FileStream(@"E:\TrainingXtenITCompCnyompa\FileClassStore\Fbinary.dat", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bf = new BinaryFormatter();
+                dept = (Department)bf.Deserialize(f);
+                txtid.Text = dept.Id.ToString();
+                txtname.Text = dept.name;
+                txtlocation.Text = dept.location;
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

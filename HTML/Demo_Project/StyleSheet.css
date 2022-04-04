@@ -1,0 +1,12 @@
+﻿.div1 {
+    padding:10px 50px;
+}
+.startdiv {
+    padding: 150px 10px 10px 00px;
+    background-image: url(images/newdemo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position:bottom ;
+    background-origin: border-box;
+}

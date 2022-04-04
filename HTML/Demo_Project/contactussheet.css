@@ -1,0 +1,19 @@
+﻿.sec1 {
+    background-color: antiquewhite;
+    background-size: cover;
+    height: 50px;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    text-decoration-color: #D41CCB;
+}
+.sec2{
+    background-image:url("images/buscuit.jpeg");
+    background-repeat:no-repeat ;
+    width:1500px;
+    height:500px;
+}
+.sec2d1{
+    float:right;
+    padding:20px 20px;
+
+}

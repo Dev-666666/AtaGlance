@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace serialization_Demo
 {
-    internal class Department
+    [Serializable]
+  public  class Department
     {
         public int Id { set; get; }
         public string name { set; get; }
