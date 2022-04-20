@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Index";
+
+}
+<h2>Using Html Helpers</h2>
+
+@{Html.BeginForm();}
+@Html.Label("UserName") @Html.TextBox("uname")<br/>
+@Html.Label("Password") @Html.Password("pass")<br/>
+@Html.Display("What") <br/>
+
+@Html.Label("Select gender") Male @Html.RadioButton("mGender","Male")      &nbsp;
+                             Female @Html.RadioButton("fGender","FeMale")    &nbsp;
+                             Other @Html.RadioButton("oGender","Other") <br/><br/>
+   
+<h2>SelectOption</h2><br/>
+@Html.Label("Select Gender")
+<select class="form-control">
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+</select>
+
+
+
+
+
+<br/><br/>
+<h2>DropDown</h2><br/>
+@Html.DropDownList("Employee Gender",
+                   new SelectList(Enum.GetValues(typeof(Gender))),
+                   "Select Gender",
+                   new{@class ="form-control"})<br/><br/>
+
+@Html.CheckBox("select") I Agree
+
+@{Html.EndForm();}

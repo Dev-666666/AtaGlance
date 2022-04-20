@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3>Product List</h3>
+<p>
+    @Html.ActionLink("Add New", "Create", "Product")
+</p>
+<table class="table table-bordered">
+   <thead class="thead-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    @foreach(Crud_operations_mvc.Models.Product prod in ViewBag.Prolist)
+    {
+        <tr>
+            <td>@prod.id</td>
+            <td>@prod.pname</td>
+            <td>@prod.price</td>
+            <td>@prod.quantity</td>
+           @* <td>
+                @Html.ActionLink("Edit", "Edit", new { @id = prod.id }) |
+                @Html.ActionLink("Delete", "Delete", new { @id = prod.id })
+            </td>*@
+        </tr>
+    }
+</table>

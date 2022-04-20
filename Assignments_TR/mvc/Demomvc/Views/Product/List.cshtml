@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+   
+}
+<h2>Viewing List</h2>
+<h2>
+    @ViewData["msg2"]
+</h2>
+<p>
+    <table class="table table-bordered table-dark">
+        <tr><th>Id</th><th>Name</th><th>Price</th></tr>
+            <tb>
+                @foreach(Demomvc.Models.Productlist item in ViewBag.prolist)
+             {
+                <tr><th>@item.id</th>   <th>@item.pnm</th><th>@item.price</th></tr>
+             }
+             </tb>
+        </tr>
+       
+        
+    </table>
+    <h2>Viewdata</h2>
+       <table  class="table table-bordered">
+           <tb> @foreach(Demomvc.Models.Productlist item in (IEnumerable<Demomvc.Models.Productlist>)ViewData["prol"])
+    {
+ <tr><td class="bg-primary">@item.id</td>
+  <td class="bg-success">@item.pnm</td>
+  <td class="bg-warning">@item.price</td></tr>
+
+}
+</tb>
+</table>
+    
+   
+</p>

@@ -1,0 +1,8 @@
+E:\TrainingXtenITCompCompany\Assignments_TR\bin\Debug\Assignments_TR.exe.config
+E:\TrainingXtenITCompCompany\Assignments_TR\bin\Debug\Assignments_TR.exe
+E:\TrainingXtenITCompCompany\Assignments_TR\bin\Debug\Assignments_TR.pdb
+E:\TrainingXtenITCompCompany\Assignments_TR\obj\Debug\Assignments_TR.csproj.AssemblyReference.cache
+E:\TrainingXtenITCompCompany\Assignments_TR\obj\Debug\Assignments_TR.csproj.SuggestedBindingRedirects.cache
+E:\TrainingXtenITCompCompany\Assignments_TR\obj\Debug\Assignments_TR.csproj.CoreCompileInputs.cache
+E:\TrainingXtenITCompCompany\Assignments_TR\obj\Debug\Assignments_TR.exe
+E:\TrainingXtenITCompCompany\Assignments_TR\obj\Debug\Assignments_TR.pdb
